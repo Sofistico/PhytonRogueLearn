@@ -13,13 +13,13 @@ class EventHandler(tcod.event.EventDispatch[Action]):
 
         key = event.sym
 
-        if key == tcod.event.K_UP:
+        if key == tcod.event.K_UP or key == tcod.event.K_8:
             action = MovementAction(dx=0, dy=-1)
-        elif key == tcod.event.K_DOWN:
+        elif key == tcod.event.K_DOWN or key == tcod.event.K_2:
             action = MovementAction(dx=0, dy=1)
-        elif key == tcod.event.K_LEFT:
+        elif key == tcod.event.K_LEFT or key == tcod.event.K_KP_4:
             action = MovementAction(dx=-1, dy=0)
-        elif key == tcod.event.K_RIGHT:
+        elif key == tcod.event.K_RIGHT or key == tcod.event.K_6:
             action = MovementAction(dx=1, dy=0)
 
         elif key == tcod.event.K_ESCAPE:
