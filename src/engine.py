@@ -9,7 +9,7 @@ from input_handler import EventHandler
 
 class Engine:
     def __init__(self, entities: Set[Entity], event_handler: EventHandler, player: Entity):
-        self.entities = entites
+        self.entities = entities
         self.event_handler = event_handler
         self.player = player
 
@@ -28,7 +28,7 @@ class Engine:
 
     def render(self, console: Console, context: Context) -> None:
         for entity in self.entities:
-            console.print(entity.x, entity.y, entity.char, fg=entitiy.color)
+            console.print(entity.x, entity.y, entity.char, fg=entity.color)
 
         context.present(console)
 
