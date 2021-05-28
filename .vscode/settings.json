@@ -1,6 +1,8 @@
 {
-    "python.pythonPath": "env\\Scripts\\python.exe",
     "python.autoComplete.extraPaths": [
+        "${workspaceFolder}\\env\\Lib"
+    ],
+    "python.analysis.extraPaths": [
         "${workspaceFolder}\\env\\Lib"
     ]
 }
