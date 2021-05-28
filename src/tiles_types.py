@@ -3,7 +3,7 @@ from typing import Tuple
 import numpy as np # type: ignore
 
 # Tile graphics structured type compatible with Console.tiles_rgb.
-grahpic_dt = np.dtype(
+graphic_dt = np.dtype(
     [
         ("ch", np.int32), # Unicode codepoint.
         ("fg", "3B"), # 3 unsigned bytes, for RGB colors.
@@ -26,7 +26,7 @@ def new_title(
     walkable = int,
     transparent = int,
     dark = Tuple[int, Tuple[int, int,int ], Tuple[int, int, int]],
-    ) -> np.darray:
+    ) -> np.ndarray:
         """Helper function for defining individual tile types """
         return np.array((walkable, transparent, dark), dtype=tile_dt)
 
