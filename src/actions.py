@@ -15,6 +15,8 @@ class Action:
         `entity` is the object performing the action.
 
         This method must be overridden by Action subclasses.
+        
+        joao victor é meu lovezin
         """
         raise NotImplementedError()
 
